@@ -50,3 +50,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (width <= 76em) {
+  body {
+    --max-width: 375px;
+    width: min(var(--max-width), 100%);
+    margin-inline: auto;
+  }
+}

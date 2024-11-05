@@ -108,3 +108,13 @@
     transform: translateY(100%);
   }
 }
+
+@media (width <= 76em) {
+  #gallery {
+    padding: 2.5rem 1rem;
+
+    & .content {
+      grid-template-areas: "A" "B" "C" "D";
+    }
+  }
+}

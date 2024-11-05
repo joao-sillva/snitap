@@ -205,3 +205,18 @@
     transform: translateY(-15rem);
   }
 }
+
+@media (width <= 76em) {
+  #hero {
+    flex-direction: column-reverse;
+    padding: 2.5rem 1rem;
+
+    & .buttons {
+      flex-direction: column-reverse;
+    }
+
+    & > div:nth-child(2){
+      height: 25.5rem;
+    }
+  }
+}
